@@ -1,8 +1,7 @@
-
 export function Greeting({ name }: { name?: string }) {
   return (
     <h1 className="text-6xl font-bold text-center">
-      Hello {name || 'World'}
+      Hello {name ?? 'World'}
     </h1>
   );
 }

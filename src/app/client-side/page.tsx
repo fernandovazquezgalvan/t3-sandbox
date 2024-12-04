@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link";
 
 interface ApiResponse {
   length?: number;
@@ -67,12 +68,12 @@ export default function HomePage() {
         </div>
       )}
       <div className="fixed bottom-8">
-        <a 
+        <Link 
           href="/" 
           className="text-white hover:text-gray-300 underline transition"
         >
           Back to Home
-        </a>
+        </Link>
       </div>
     </main>
   );
