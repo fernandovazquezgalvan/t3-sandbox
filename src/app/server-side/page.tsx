@@ -14,7 +14,7 @@ function ServerForm() {
   return (
     <div className="flex flex-col items-center gap-4">
       <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem] text-center break-words max-w-[90%]">
-        Hello {state.name ?? 'World'}
+        Hello {state.name?.trim() ? state.name : 'World'}
       </h1>
       <div className="mt-4 flex flex-col items-center gap-4">
         <form action={formAction} className="flex flex-col items-center gap-4">
